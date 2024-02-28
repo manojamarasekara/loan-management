@@ -38,4 +38,22 @@ describe("Loan Class Tests", () => {
 
     expect(loan.calculateTotalAmount()).toBe(5300);
   });
+
+  // Test - makePayment method
+  test("Make payment", () => {
+    const loan = new Loan("Bank", "Borrower", 5000, 1, 6);
+    loan.makePayment(1000, 3);
+
+    expect(loan.paymentReceived).toEqual([1000]);
+  });
+  
+  // Test - getBalance method
+  test("Get balance", () => {
+    const loan = new Loan("Bank", "Borrower", 5000, 1, 6);
+    
+    loan.makePayment(1000, 3);
+
+    const balance = loan.getBalance(3);
+    expect(balance).toEqual(["Bank", "Borrower", 1000, 9]);
+  });
 });
