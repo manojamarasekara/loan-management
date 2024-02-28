@@ -1,0 +1,15 @@
+{
+  "name": "loan-management",
+  "version": "1.0.0",
+  "description": "A simple command-line tool written in pure JavaScript for The Ledger Co.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "author": "Manoj Amarasekara",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

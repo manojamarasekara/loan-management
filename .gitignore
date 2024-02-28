@@ -1,1 +1,8 @@
+# ignore the vs code workspace files
 /.vscode
+
+# ignore node_modules
+/node_modules/
+
+# Ignore npm package lock files
+package-lock.json
