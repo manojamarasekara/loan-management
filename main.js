@@ -2,18 +2,6 @@ const readline = require("readline");
 
 const Loan = require("./src/loan");
 
-const loanAmount = [
-  "LOAN IDIDI Dale 5000 1 6",
-  // "LOAN MBI Harry 10000 3 7",
-  // "LOAN UON Shelly 15000 2 9",
-];
-
-const paymentAmount = [
-  "PAYMENT IDIDI Dale 1000 5",
-  // "PAYMENT MBI Harry 5000 10",
-  // "PAYMENT UON Shelly 7000 12",
-];
-
 const readStream = readline.createInterface({
   input: process.stdin,
 });
